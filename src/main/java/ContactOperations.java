@@ -12,6 +12,7 @@ public class ContactOperations extends ContactStorage implements Operations<Cont
         return null;
     }
 
+
     @Override
     public Contact addTo(Contact v) {
         return null;
