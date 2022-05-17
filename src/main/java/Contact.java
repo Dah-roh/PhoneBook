@@ -10,5 +10,6 @@ public class Contact {
     private String name = "";
     private List<String> number = new ArrayList<>();
     private String address = "";
+    private boolean isDeleted = false;
 
 }
