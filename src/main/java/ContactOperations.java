@@ -12,10 +12,6 @@ public class ContactOperations extends ContactStorage implements Operations<Cont
         return v;
     }
 
-    public Contact searchContact(String searchParameters){
-    return null;
-    }
-
     @Override
     public Contact delete(Contact v) {
         //soft delete
@@ -29,7 +25,10 @@ public class ContactOperations extends ContactStorage implements Operations<Cont
     }
 
     @Override
-    public Contact search(Contact v) {
+    public Contact search(String v) {
+        //if the v is number or name
+        //if v is name findByName else findByNumber
+        //use found index to get contact from contactList
         return null;
     }
 }
