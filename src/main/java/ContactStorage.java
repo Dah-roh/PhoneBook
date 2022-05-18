@@ -16,4 +16,5 @@ List<Contact> contactList =  new ArrayList<>();
     //Space-complexity
 HashMap<String, Long> findByName = new HashMap<>();
 HashMap<String, Long> findByNumber = new HashMap<>();
+//HashMap<List<String>, Long> findByNumberInArray =  new HashMap<>();
 }

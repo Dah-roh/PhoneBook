@@ -8,7 +8,12 @@ public class ContactOperations extends ContactStorage implements Operations<Cont
     public Contact save(Contact v) {
         contactList.add(v);
         findByName.put(v.getName(), Long.valueOf(contactList.indexOf(v)));
-        findByNumber.put(v.getNumber().toString(), Long.valueOf(contactList.indexOf(v)));
+        for (String number : v.getNumber()) {
+            findByNumber.put(number, Long.valueOf(contactList.indexOf(v)));
+        }
+//        v.getNumber().forEach(number->{
+//            findByNumber.put(number, Long.valueOf(contactList.indexOf(v)));
+//        });
         return v;
     }
 
